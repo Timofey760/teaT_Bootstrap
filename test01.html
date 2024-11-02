@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- Add your navigation items here -->
+            <h1 class="display-1 text-center text-primary font-weight-bold">Тест по информатике</h1>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <!-- Add your sidebar items here -->
+                    <a href="test01.html">тест 1</a><br>
+                    <a href="test02.html">тест 2</a><br>
+                    <a href="test03.html">тест 3</a><br>                                    
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <!-- Add your main content here -->
+                <h2 class="text-success">Test 1</h2>
+                <!--
+                <h3 class="text-success">Our Services</h3>
+                <h4 class="font-italic">Contact Us</h4>
+                -->
+                <table class="table table-striped  table-bordered" id="q1">
+                    <tr>
+                        <td class="text-center align-middle" rowspan="3">1</td>
+                        <td colspan="4" class="task">
+                            Автоматическое устройство осуществило перекодировку информационного сообщения на русском
+                            языке,
+                            первоначально записанного в 16-битном коде Unicode, в 8-битную кодировку КОИ-8. При этом
+                            информационное
+                            сообщение уменьшилось на 480 бит. Какова длина сообщения в символах?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="variant">1) 30</td>
+                        <td class="variant">2) 60</td>
+                        <td class="variant">3) 120</td>
+                        <td class="variant">4) 480</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input class="form-control" id="a1" type="text" class="answer" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+                <table class="table table-striped  table-bordered" id="q2">
+                    <tr>
+                        <td class="text-center align-middle" rowspan="3">2</td>
+                        <td colspan="4" class="task">
+                            1. Информационное сообщение объемом 450 бит состоит из 150 символов. Каков информационный
+                            вес каждого
+                            символа этого сообщения?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="variant">1) 5 бит</td>
+                        <td class="variant">2) 30 бит</td>
+                        <td class="variant">3) 3 бита</td>
+                        <td class="variant">4) 3 байта</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input class="form-control" id="a2" type="text" class="answer" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+                <table class="table table-striped  table-bordered" id="q3">
+                    <tr>
+                        <td class="text-center align-middle" rowspan="3">3</td>
+                        <td colspan="4" class="task">
+                            2. Информационное сообщение объемом 3 Кбайта содержит 6144 символа. Сколько символов
+                            содержит алфавит,
+                            при помощи которого было записано это сообщение?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="variant">1) 4</td>
+                        <td class="variant">2) 16</td>
+                        <td class="variant">3) 8</td>
+                        <td class="variant">4) 32</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input class="form-control" id="a3" type="text" class="answer" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+                <button class="btn btn-success" onclick="Check('test01')">Проверить</button>
+                <div>Правильно:<span id="score"></span></div>
+                <p>Разработчики:
+                    Иванов Иван, Петров Андрей
+                </p>
+                <!------------ Сохранение и загрузка ---------------------->
+                <button onclick="Save()">Сохранить результаты</button>
+                <button onclick="Load()">Загрузить результаты</button>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+          Copyright&copy; Kurin Timofey
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
