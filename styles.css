@@ -6,3 +6,7 @@ div{
 {
     margin: 5px;
 }
+
+td input{
+    width: 100px;
+}
